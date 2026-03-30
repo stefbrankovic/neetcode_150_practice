@@ -1,0 +1,22 @@
+# Anagram Groups
+# Difficulty: Medium
+# https://neetcode.io/practice/practice/neetcode150
+
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        # Mapping character counts to list of anagrams
+        # Key: chars count list, value: list of strings
+        lst = defaultdict(list)  # to avoid an empty dict edge case
+
+        for s in strs:
+            count = [0] * 26 # a b ... z
+
+            for ch in s:
+                count[ord(ch)-ord('a')] += 1 # ord - ASCII code
+
+            lst[tuple(count)].append(s) # list can't be the key -> tuple()
+
+        return list(lst.values())
+
+        # O(m*n)
+        # Using sort will give us O(m*logn)
