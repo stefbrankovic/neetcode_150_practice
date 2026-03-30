@@ -1,6 +1,6 @@
 # Anagram Groups
 # Difficulty: Medium
-# https://neetcode.io/practice/practice/neetcode150
+# https://neetcode.io/problems/anagram-groups/question?list=neetcode150
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
