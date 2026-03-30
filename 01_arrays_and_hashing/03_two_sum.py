@@ -1,6 +1,6 @@
 # Two sum
 # Difficulty: Easy
-# https://neetcode.io/problems/two-integer-sum/question
+# https://neetcode.io/problems/two-integer-sum/question?list=neetcode150
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
