@@ -1,3 +1,7 @@
+# Contains Duplicate
+# Difficulty: Easy
+# https://neetcode.io/problems/duplicate-integer/question?list=neetcode150
+
 class Solution:
     # Using the Hashset strucutre to store all unique values
     def hasDuplicate(self, nums: List[int]) -> bool:
